@@ -1,13 +1,15 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        start = 0
+        l = end = len(nums) - 1
         
-        hashmap = {}
-        for i in range(len(nums)):
-            hashmap[nums[i]] = i
-                    
-        for i in range(len(nums)):
-            pair = target - nums[i]
+        while start < end :
+            if nums[start] + nums[end] == target :
+                return [start,end]
             
-            if pair in hashmap and hashmap[pair] != i:
-                return [i,hashmap[pair]]
-        
+            end -= 1
+            if end <= start:
+                end = l
+                start += 1
+            
+        return []
