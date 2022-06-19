@@ -1,1 +1,1 @@
-​
+​ The brute force technique gets us O(n^2) time, to optimize it we used hashtable. It's a tradeoff between space and time which can always been argued but leetcode gave a much better runtime and slight increase in space, hence using a hashtable is a good idea here.
