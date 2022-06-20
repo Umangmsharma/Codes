@@ -1,1 +1,1 @@
-​
+​Hashtable concept here again too, save the mapping in hashtable and then compare the string elements one by one, for subtraction, we just need to handle a case where we check the last string element.
