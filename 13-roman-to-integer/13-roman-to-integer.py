@@ -15,11 +15,9 @@ class Solution:
         prev = ''
         
         for  i in s:
-            # print("enter")
             match i:
                 
                 case 'V':
-                    # print("Enter :", integer)
                     if prev == 'I': 
                         integer = integer - 1 + hashmap[i] - 1
                         prev = i
