@@ -7,5 +7,4 @@ class Solution:
             else :
                 Dict[i] = 1
                 
-        print(Dict)
         return max(Dict, key=Dict.get)
