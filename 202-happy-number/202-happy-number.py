@@ -1,7 +1,7 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
         digit_sum = 0
-        dig_hash = []
+        dig_hash = set()
 
         while n > 0 :
             digit = n % 10
@@ -15,6 +15,6 @@ class Solution:
                 if digit_sum not in dig_hash :
                     n = digit_sum
                     digit_sum = 0
-                    dig_hash.append(n)
+                    dig_hash.add(n)
                 
         return False
